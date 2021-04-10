@@ -10,7 +10,7 @@ VERSION = '1.0.0'
 def build(bld):
     bld.env.append_unique(
         'DEFINES_STEINWURF_VERSION',
-        'STEINWURF_THRIFT_VERSION="{}"'.format(VERSION))
+        'STEINWURF_CLI11_VERSION="{}"'.format(VERSION))
 
     use_flags = []
     if bld.is_mkspec_platform('linux'):
