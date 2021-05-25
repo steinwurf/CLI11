@@ -46,8 +46,6 @@ jobs:
         run: |
           echo "::add-matcher::.github/gcc-problem-matcher.json"
           python3 waf
-      - name: Waf Test
-        run: python3 waf --run_tests
   # Build performed on runner using make specs
   cxx_mkspec:
     strategy:
@@ -82,8 +80,6 @@ jobs:
         run: |
           echo "::add-matcher::.github/gcc-problem-matcher.json"
           ${{ env.python }} waf
-      - name: Test
-        run: ${{ env.python }} waf --run_tests
   # Valgrind Check
   valgrind:
     name: Valgrind
@@ -99,8 +95,6 @@ jobs:
         run: |
           echo "::add-matcher::.github/gcc-problem-matcher.json"
           python3 waf
-      - name: Valgrind Test
-        run: python3 waf --run_tests --run_cmd="valgrind %s"
   # NDEBUG compilation
   ndebug:
     name: No Assertions
@@ -116,5 +110,3 @@ jobs:
         run: |
           echo "::add-matcher::.github/gcc-problem-matcher.json"
           python3 waf
-      - name: Valgrind Test
-        run: python3 waf --run_tests
