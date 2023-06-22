@@ -3,14 +3,18 @@
         "name": "waf-tools",
         "resolver": "git",
         "method": "semver",
-        "major": 4,
-        "sources": [ "github.com/steinwurf/waf-tools.git" ]
+        "major": 5,
+        "sources": [
+            "github.com/steinwurf/waf-tools.git"
+        ]
     },
     {
         "name": "cli11-source",
         "resolver": "git",
         "method": "checkout",
         "checkout": "f862849488557eeee0397814a47449ecfdae0383",
-        "sources": [ "github.com:CLIUtils/CLI11.git" ]
+        "sources": [
+            "github.com:CLIUtils/CLI11.git"
+        ]
     }
 ]
