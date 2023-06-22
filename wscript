@@ -21,6 +21,7 @@ def build(bld):
     bld(name="cli11", export_includes=cli11_path.find_dir("include").abspath())
 
     if bld.is_toplevel():
+        # Build the example
         bld.program(
             features="cxx",
             source=cli11_path.ant_glob("examples/simple.cpp"),
