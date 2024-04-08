@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 APPNAME = "CLI11"
-VERSION = "2.0.0"
+VERSION = "2.0.1"
 
 
 def configure(conf):
