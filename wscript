@@ -22,7 +22,7 @@ def build(bld):
         and "g++" in bld.env.CXX_NAME
         and int(bld.env.CC_VERSION[0]) < 9
     ):
-        defines += ["CLI11_STD_FILESYSTEM=0"]
+        defines += ["CLI11_USE_FILESYSTEM=0"]
     # Create system include for cli11
     bld(
         name="cli11",
