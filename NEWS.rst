@@ -6,7 +6,8 @@ every change, see the Git log.
 
 Latest
 ------
-* tbd
+* Patch: Fix build with GCC 8, such that the CLI11 includes do not cause
+  conflicts with the `std::experimental::filesystem` includes.
 
 2.0.0
 -----
